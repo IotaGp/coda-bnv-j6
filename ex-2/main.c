@@ -8,7 +8,6 @@ int main()
     char str2[] = "hello world !";
 
     int i = strcmp(str1, str2);
-    printf("%d\n", i);
-
+    cmp(i);
     exit(0);
 }
