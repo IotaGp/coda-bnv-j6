@@ -1,14 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-int cmp(int i)
+int str_cmp = (char *str1, char *str2)
 {
-    if(i == 0)
+    int i = 0;
+    while(str1[i] != \0)
     {
-        printf("1\n");
+        if(str1[i] != str2[i])
+        {
+            return 0;
+        }
+        i = i + 1;
     }
-    else
+    if(str1[i] == str2[i])
     {
-        printf("0\n");
+        return i;
     }
 }
