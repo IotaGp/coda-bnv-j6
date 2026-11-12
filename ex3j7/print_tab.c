@@ -1,0 +1,12 @@
+#include <stdio.h>
+int print_tab(char **tab)
+{
+    int i = 0;
+
+    while(tab[i] != NULL)
+    {
+        printf("%s\n", tab[i]);
+        i++;
+    }
+    return 0;
+}
